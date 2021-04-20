@@ -36,6 +36,7 @@ public class Cart extends HttpServlet {
             page +="<h3>Цена: " + p.getCost() + "</h3> <br/>" + System.lineSeparator();
 
         }
+
         resp.setHeader("Content-Type", "text/html; charset=utf-8");
         resp.getWriter().print(page);
     }
